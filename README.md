@@ -15,7 +15,9 @@ Do something like this in your Markdown files, or wherever you can use Liquid te
 {% include_code https://raw.githubusercontent.com/asengupta/transformers-paper-implementation/main/transformer.py!10!50%}
 ```
 
-The above will include the lines 10 to 50 of the file ```https://raw.githubusercontent.com/asengupta/transformers-paper-implementation/main/transformer.py```. There are no defaults; you **must** specify the starting and ending lines. There is no boundary checking: use at your own risk.
+The above will include the lines 10 to 50 of the file ```https://raw.githubusercontent.com/asengupta/transformers-paper-implementation/main/transformer.py```.
+
+There are no defaults; you **must** specify the starting and ending lines. There is no boundary checking: use at your own risk.
 
 ## Warning
 
@@ -23,5 +25,5 @@ This plugin has no error checking, no edge case checking, no configurability.
 
 ## Why?
 
-I wanted a way to include parts of my Github code in my blog posts, and didn't want to Github Gists. There was no existing plugin I found which could do this, either.
+I wanted a way to include parts of my Github code in my blog posts, and didn't want to use Github Gists. There was no existing plugin I found which could do this, either.
 

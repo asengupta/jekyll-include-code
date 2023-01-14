@@ -8,8 +8,8 @@ module Jekyll
         super
         params = text.split("!")
         uri = URI.parse(params[0])
-        from = params[1].to_i
-        to = params[2].to_i
+        from = params[1].to_i - 1
+        to = params[2].to_i - 1
         response = Net::HTTP.get_response(uri)
         @body = response.body.lines[Range.new(from, to)]
       end
